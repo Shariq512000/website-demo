@@ -26,3 +26,33 @@
     background-color: transparent !important;
     color: #2B93DC !important;
 }
+.profile{
+    margin: 10%;
+    padding: 15px 0 15px 15px;
+    display: flex;
+    background-color: #2B93DC;
+}
+.profilePic img{
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 45px;
+}
+.profileDetail{
+    margin-left: 15px;
+}
+.profileDetail p:nth-child(1){
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.profileDetail p:nth-child(2){
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}

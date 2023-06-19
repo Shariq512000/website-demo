@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
+import profilePicture from "./images/download.jpg";
 // import "../../../node_modules/react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -45,27 +46,27 @@ const Leftbar = () => {
   return (
     <Box
     //////
-      // sx={{
-      //   "& .pro-sidebar-inner": {
-      //     background: ` black !important`,
-      //   },
-      //   // ${colors.primary[400]}
-      //   "& .pro-icon-wrapper": {
-      //     backgroundColor: "transparent !important",
-      //   },
-      //   "& .pro-inner-item": {
-      //     padding: "5px 35px 5px 20px !important",
-      //   },
-      //   "& .pro-inner-item:hover": {
-      //     color: "#868dfb !important",
-      //   },
-      //   "& .pro-menu-item.active": {
-      //     color: "#6870fa !important",
-      //   },
-      // }}
+    // sx={{
+    //   "& .pro-sidebar-inner": {
+    //     background: ` black !important`,
+    //   },
+    //   // ${colors.primary[400]}
+    //   "& .pro-icon-wrapper": {
+    //     backgroundColor: "transparent !important",
+    //   },
+    //   "& .pro-inner-item": {
+    //     padding: "5px 35px 5px 20px !important",
+    //   },
+    //   "& .pro-inner-item:hover": {
+    //     color: "#868dfb !important",
+    //   },
+    //   "& .pro-menu-item.active": {
+    //     color: "#6870fa !important",
+    //   },
+    // }}
     >
-      <Sidebar style={{margin:0, padding:0}} collapsed={isCollapsed}>
-        <Menu style={{backgroundColor:'#141B2D' , paddingBottom: 20}} iconShape="square">
+      <Sidebar style={{ margin: 0, padding: 0 }} collapsed={isCollapsed}>
+        <Menu style={{ backgroundColor: '#141B2D', paddingBottom: 20 , height: '100vh' }} iconShape="square">
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -92,34 +93,43 @@ const Leftbar = () => {
             )}
           </MenuItem>
 
-          {/* {!isCollapsed && (
-            <Box mb="25px">
-              <Box display="flex" justifyContent="center" alignItems="center">
-                <img
-                  alt="profile-user"
-                  width="100px"
-                  height="100px"
-                  src={`../../assets/user.png`}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
-              </Box>
-              <Box textAlign="center">
-                <Typography
-                  variant="h2"
-                  color={colors.grey[100]}
-                  fontWeight="bold"
-                  sx={{ m: "10px 0 0 0" }}
-                >
-                  Malik
-                </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
-                </Typography>
-              </Box>
-            </Box>
-          )} */}
+          {!isCollapsed && (
+            // <Box mb="25px">
+            //   <Box display="flex" justifyContent="center" alignItems="center">
+            //     <img
+            //       alt="profile-user"
+            //       width="100px"
+            //       height="100px"
+            //       src={`../../assets/user.png`}
+            //       style={{ cursor: "pointer", borderRadius: "50%" }}
+            //     />
+            //   </Box>
+            //   <Box textAlign="center">
+            //     <Typography
+            //       variant="h2"
+            //       color={colors.grey[100]}
+            //       fontWeight="bold"
+            //       sx={{ m: "10px 0 0 0" }}
+            //     >
+            //       Malik
+            //     </Typography>
+            //     <Typography variant="h5" color={colors.greenAccent[500]}>
+            //       VP Fancy Admin
+            //     </Typography>
+            //   </Box>
+            // </Box>
+            <div className="profile">
+                <div className="profilePic">
+                  <img src={profilePicture} alt="" />
+                </div>
+                <div className="profileDetail">
+                  <p>Jhon Doe</p>
+                  <p>Super Admin</p>
+                </div>
+            </div>
+          )}
 
-          <Box paddingLeft={isCollapsed ? undefined : "5%"} paddingRight={isCollapsed ? undefined : "5%"} >
+          <Box paddingLeft={isCollapsed ? undefined : "10%"} paddingRight={isCollapsed ? undefined : "10%"} >
             <Item
               title="Dashboard"
               to="/"
