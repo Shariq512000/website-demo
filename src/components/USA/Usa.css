@@ -1,0 +1,13 @@
+path {
+    pointer-events: all;
+}
+path:hover {
+    opacity: 0.50;
+    cursor: pointer;
+}
+.WA , .WY , .TX , .PA , .VA , .KY{
+    fill: #D0D4FA !important;
+}
+.usa svg{
+    width: 100%;
+}

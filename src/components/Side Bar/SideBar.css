@@ -1,47 +1,50 @@
-.ps-menu-button:nth-child(1):hover{
+.sideBar .ps-menu-button:nth-child(1):hover{
     background-color: unset;
 }
-.ps-menu-button{
+.sideBar .ps-menu-button{
     /* padding-left: 0px !important; */
     /* padding-right: 0px !important; */
     /* margin-right: 20px !important; */
     transition: all 0.4s ease-in-out;
 }
-.ps-menu-button:hover{
+.sideBar .ps-menu-button:hover{
     /* background-color: transparent !important; */
     background-color: #2B93DC !important;
 }
-.css-ahj2mt-MuiTypography-root{
+.sideBar .css-ahj2mt-MuiTypography-root{
     font-size: 0.88rem !important;
 }
-.css-dip3t8{
+.sideBar .css-dip3t8{
     background-color: #141B2D !important;
 }
-.css-1m3bo6 > button{
+.sideBar .css-1m3bo6 > button{
     transition: all 0.4s ease-in-out;
     color: #FFFFFF;
     border-color: transparent;
 }
-.css-1m3bo6 > button:hover{
-    background-color: transparent !important;
-    color: #2B93DC !important;
+.sideBar .css-1m3bo6 > button:hover{
+    /* background-color: unset !important;
+    color: #2B93DC !important; */
 }
-.profile{
+.sideBar .css-1m3bo6:hover{
+    background-color: unset;
+}
+.sideBar .profile{
     margin: 10%;
     padding: 15px 0 15px 15px;
     display: flex;
     background-color: #2B93DC;
 }
-.profilePic img{
+.sideBar .profilePic img{
     width: 45px;
     height: 45px;
     border: 1px solid white;
     border-radius: 45px;
 }
-.profileDetail{
+.sideBar .profileDetail{
     margin-left: 15px;
 }
-.profileDetail p:nth-child(1){
+.sideBar .profileDetail p:nth-child(1){
     font-weight: 600;
     color: black;
     margin-bottom: 0px;
@@ -49,10 +52,13 @@
     margin-top: 0px;
     padding-top: 0px;
 }
-.profileDetail p:nth-child(2){
+.sideBar .profileDetail p:nth-child(2){
     color: white;
     margin-bottom: 0px;
     padding-bottom: 0px;
     margin-top: 0px;
     padding-top: 0px;
+}
+.sideBar .css-1wvake5{
+    width: 350px;
 }
